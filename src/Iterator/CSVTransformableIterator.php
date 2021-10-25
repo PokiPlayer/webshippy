@@ -13,11 +13,6 @@ abstract class CSVTransformableIterator extends \IteratorIterator
     {
         $data   = parent::current();
         
-        if (null === $data)
-        {
-            throw new \Exception('CSV is empty or only have header!');
-        }
-        
         $class  = $this->getObjectClass();
         $object = new $class();
         

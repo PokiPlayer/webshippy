@@ -83,7 +83,10 @@ class CSVReadlineIterator implements \Iterator
     {
         $this->current = [];
         $this->cnt     = 0;
-        rewind($this->resource);
+        
+        if (is_resource($this->resource)) {
+            rewind($this->resource);
+        }
     }
     
     /**

@@ -6,7 +6,6 @@
     </include>
     <exclude>
       <directory>./src/Tests</directory>
-      <directory>./vendor</directory>
     </exclude>
   </coverage>
   <php>
