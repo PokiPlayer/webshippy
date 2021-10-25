@@ -1,0 +1,26 @@
+{
+  "name": "webshippty/fulfillable-order",
+  "type": "library",
+  "description": "Stock aware fulfillable order determinate service",
+  "homepage": "https://github.com/PokiPlayer/webshippy",
+  "authors": [
+    {
+      "name":  "Csattos Zsolt",
+      "email": "csattoszsolt@gmail.com"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": "7.4"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Webshippy\\": "src/"
+    }
+  },
+  "require": {
+    "ext-json": "*",
+    "phpunit/phpunit": "^9"
+  }
+}
